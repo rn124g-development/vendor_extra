@@ -7,10 +7,10 @@ PRODUCT_PACKAGES += \
 
 # Updater
 PRODUCT_PACKAGES += \
-    Updates
+    Updater
 
-PRODUCT_COPY_FILES += \
-    vendor/feather/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc
+#PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc
 
 # Check if certs/keys.mk exists
 ifneq ("$(wildcard certs/keys.mk)", "")
